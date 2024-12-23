@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Макет формы</title>
+        <link rel="stylesheet" href="css_files/form.css">
+    </head>
+    <body>
+        <form action="maket_2.html">
+            <button>Назад</button>
+        </form>
+        <dialog open aria-labelledby="dialogid">
+            <form action="after.html">
+                <button type="submit" aria-label="close" formmethod="dialog" formnovalidate>X</button>
+                <h2 id="dialogid">Разработка веб-приложения</h2>
+                <p>
+                    Заполните форму, и мы обязательно свяжемся с вами<br> в ближайшее время для уточнения деталей
+                </p>
+                <p>
+                    <label>Как вас зовут: 
+                        <input type="text" name="name" required />
+                    </label>
+                </p>
+                <p>
+                    <label>Ваш e-mail:
+                        <input type="email" name="mail" required />
+                    </label>
+                </p>
+                <p>
+                    <label>Телефон: 
+                        <input type="tel" name="tel" required />
+                    </label>
+                </p>
+                <p>
+                    <label>Страна:
+                        <select name="country">
+                            <option selected>Россия</option>
+                            <option>Беларусь</option>
+                            <option>Казахстан</option>
+                            <option>Татарстан</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>Комментарий:
+                        <textarea name="comment" id=""></textarea>
+                    </label>
+                </p>
+                <p>
+                    <input type="checkbox" required /> Согласен на обработку моих персональных данных
+                </p>
+                <form action="maket_2.html">
+                    <button type="submit" formmethod="post" id="Final">Отправить заявку</button>
+                </form>
+            </form>
+        </dialog>
+    </body>
+</html>

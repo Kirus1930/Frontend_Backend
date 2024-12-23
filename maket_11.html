@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Макет страницы 11</title>
+        <link rel="stylesheet" href="">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1 id="header">Заголовок</h1>
+        <h2 id="col">Параграф #</h2>
+        <p id="par">  Это начальный текст параграфа.</p>
+        <iframe id="video" width="720" height="405" src="video_1.mp4" frameborder="0"></iframe>
+        
+        <script>
+            const h1 = document.getElementById("header");
+            h1.textContent = "Добро пожаловать на наш сайт!";
+
+            const elem = document.getElementById("col");
+            elem.style.color = "red";
+
+            const txt = document.getElementById("par");
+            txt.textContent = "Это новый текст параграфа.";
+
+            const vid = document.getElementById("video");
+            vid.style.display = "none";
+        </script>
+
+        <form id="data_form">
+            <input type="text" name="username" placeholder="Имя">
+            <div>
+                <input type="email" name="mail" placeholder="E-mail">
+            </div>
+            <div>
+                <input type="tel" name="num" placeholder="Телефон">
+            </div>
+            <div>
+                <input type="date" name="data" placeholder="Дата">
+            </div>
+            <div>
+                <input type="text" name="comm" placeholder="Комментарий">
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <script>
+            var formData = new Object();
+            const form = document.getElementById("data_form");
+            const nameValue = form.elements["username"].value;
+            const mailValue = form.elements["mail"].value;
+            const numValue = form.elements["num"].value;
+            const dateValue = form.elements["data"].value;
+            const commValue = form.elements["comm"].value;
+            form.addEventListener("submitForm", function(event) {
+                event.preventDefault();
+                if (nameValue == null){
+                    alert(`Имя должно быть заполнено`);
+                }
+                else{
+                    formData.name = nameValue;
+                    if (mailValue == null){
+                        alert(`E-mail должен быть заполнен`);
+                    }
+                    else{
+
+                    }
+                }
+                formData.name = nameValue;
+                formData.mail = mailValue;
+                formData.num = numValue;
+                formData.date = dateValue;
+                formData.text = commValue;
+            });
+            formData.printData = function(){
+            };
+            const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
+            const input = document.querySelector('mail');
+
+            function onInput() {
+                if (isEmailValid(input.value)) {
+                    input.style.borderColor = 'green';
+                }
+                else {
+                    alert(`Ошибка: E-mail введен некорректно`);
+                }
+            }
+
+            input.addEventListener('input', onInput);
+
+            function isEmailValid(value) {
+                return EMAIL_REGEXP.test(value);
+            }
+        </script>
+    </body>
+</html>
