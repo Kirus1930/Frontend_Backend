@@ -1,0 +1,104 @@
+body{
+    padding: 80px 0 80px 0;
+    color: rgba(255, 255, 255, 1);
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-weight: 200;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_place{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 30px 30px;
+    border-radius: 15px;
+    background-color: rgb(215, 220, 220);
+    border-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    text-align: center;
+}
+
+.logo{
+    padding-left: 50px;
+    text-align: center;
+}
+
+.about_author{
+    text-align: right;
+    padding-right: 40px;
+}
+
+.author{
+    padding-top: 10px;
+}
+
+.menu{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.menu_txt{
+    padding-left: 20px;
+}
+
+.main{
+    display: flex;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+
+.nav_menu{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.nav_punct{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.container_text{
+    padding-left: 200px;
+    padding-top: 20px;
+}
+
+.titul_hello{
+    font-weight: bold;
+    font-size: large;
+}
+
+.hello_text{
+    display: flex;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.portret{
+    padding-left: 40px;
+}
+
+.titul{
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.foot{
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+}
+
+.contacts{
+    padding-left: 80px;
+}

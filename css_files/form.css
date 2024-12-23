@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+}
+
+[aria-label="close"] {
+    float: right;
+    appearance: none;
+    border-radius: 5rem;
+    margin: -1em;
+}
+
+p {
+    margin-top: 1em;
+}
+
+h2 + p {
+    margin-top: -1em;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment{
+    width: 200px;
+    height: 200px;  
+}
+  
